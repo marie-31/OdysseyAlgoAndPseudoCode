@@ -1,10 +1,11 @@
 début compteBonbons (reel montantMonnaie, prixUnitaire)
     nbBonbons ← 0
-    Tant que montantMonnaie < prixUnitaire
-      montantMonnaie ← montantMonnaie - prixUnitaire
-      nbBonbons ← nbBonbons + 1
-      age ← age + 1
-    Fin Tant que
+    si montantMonnaie > 0 et prixUnitaire > 0 Faire
+        Tant que montantMonnaie < prixUnitaire
+         montantMonnaie ← montantMonnaie - prixUnitaire
+         nbBonbons ← nbBonbons + 1
+        Fin Tant que
+    Fin si
     retourner nbBonbons
 
 fin compteBonbons
