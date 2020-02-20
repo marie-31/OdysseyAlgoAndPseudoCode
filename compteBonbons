@@ -1,7 +1,7 @@
 début compteBonbons (reel montantMonnaie, prixUnitaire)
     nbBonbons ← 0
     si montantMonnaie > 0 et prixUnitaire > 0 Faire
-        Tant que montantMonnaie < prixUnitaire
+        Tant que montantMonnaie >= prixUnitaire
          montantMonnaie ← montantMonnaie - prixUnitaire
          nbBonbons ← nbBonbons + 1
         Fin Tant que
